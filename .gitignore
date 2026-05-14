@@ -1,0 +1,35 @@
+# Secrets and local env (never commit)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+*.egg
+
+# Logs and local output
+*.log
+backend_log.txt
+test_results.txt
+
+# IDE / editor
+.idea/
+.vscode/
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local / experimental
+scratch/

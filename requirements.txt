@@ -1,0 +1,46 @@
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+email-validator>=2.1.0
+pydantic[email]>=2.5.0
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.6
+
+# Database & Storage
+supabase>=2.3.0
+
+# LLM & AI
+openai>=1.10.0
+ollama>=0.1.6
+sentence-transformers>=2.3.0
+
+# Transformers & Torch (for BART summarizer + embedding GPU support)
+transformers>=4.35.0
+torch>=2.0.0
+
+# Vector Search
+faiss-cpu>=1.7.4
+numpy>=1.24.0
+pinecone>=5.0.0
+grpcio>=1.59.0
+grpcio-status>=1.59.0
+
+# LangChain (used in web_search.py Document conversion)
+langchain-core>=0.1.0
+
+# Data Processing
+pandas>=2.0.0
+nltk>=3.8.0
+
+# Web & Utilities
+requests>=2.31.0
+httpx>=0.27.0
+slowapi>=0.1.9
+python-dotenv>=1.0.0
+beautifulsoup4>=4.12.0
+duckduckgo-search>=4.1.0

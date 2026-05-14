@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment (never bake secrets into images)
+.env
+.env.local
+.env.*.local
+
+# IDE / tooling
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in API image)
+*.md
+docs/
+
+# Tests & QA
+tests/
+.pytest_cache/
+pytest.ini
+test_*.py
+*_test.py
+test_results.txt
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Logs
+*.log
+backend_log.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Not part of backend runtime image
+legacy/
+explanation/
+scratch/
+schema.sql
+
+# Frontend — huge; backend Dockerfile does not COPY these, but they
+# would otherwise be sent as build context and slow/fail builds.
+frontend/node_modules/
+frontend/.next/
